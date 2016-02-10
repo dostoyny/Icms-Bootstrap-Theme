@@ -1,0 +1,13 @@
+wysiwyg/
+upload/
+update/
+templates/default/
+.htaccess
+bootstrap.php
+credits.txt
+cron.php
+index.php
+license.en.txt
+license.ru.txt
+system/
+readme.txt
