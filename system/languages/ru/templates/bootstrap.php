@@ -34,3 +34,7 @@
     define('LANG_THEME_COPYRIGHT_URL_HINT',     'Если не указана, ведет на главную страницу');
     define('LANG_THEME_COPYRIGHT_YEAR',         'Год копирайта');
     define('LANG_THEME_COPYRIGHT_YEAR_HINT',    'Если не указан, выводится текущий');
+
+    define('LANG_THEME_OTHER',                  'Другое');
+    define('LANG_THEME_SITE_LANGUAGES',         'Язык сайта');
+    define('LANG_THEME_SITE_LANGUAGES_HINT',    'Вставьте код языка сайта, Например: ru, подробнее http://htmlbook.ru/html/value/lang  ');

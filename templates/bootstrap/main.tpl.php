@@ -1,10 +1,11 @@
 <?php $core = cmsCore::getInstance(); ?>
 <!DOCTYPE html>
-<html>
+<html<?php if (!empty($this->options['site_languages'])){ ?> lang="<?php echo $this->options['site_languages']; ?>"<?php } ?>>
 <head>
     <title><?php $this->title(); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <?php $this->addMainCSS("templates/{$this->name}/css/theme-text.css"); ?>
     <?php $this->addMainCSS("templates/{$this->name}/css/theme-layout.css"); ?>
     <?php $this->addMainCSS("templates/{$this->name}/css/theme-gui.css"); ?>
@@ -16,19 +17,12 @@
     <?php $this->addMainJS("templates/{$this->name}/js/core.js"); ?>
     <?php $this->addMainJS("templates/{$this->name}/js/modal.js"); ?>
     <?php $this->addMainJS("templates/{$this->name}/js/messages.js"); ?>
-
-
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
     <?php $this->head(); ?>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <style><?php include('options.css.php'); ?></style>
 </head>
 <body>
@@ -154,6 +148,8 @@
         </footer>
 
     </div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -56,6 +56,19 @@ class formTemplateOptions extends cmsForm {
 
                 )
             ),
+            array(
+                'type' => 'fieldset',
+                'title' => LANG_THEME_OTHER,
+                'childs' => array(
+
+                    new fieldString('site_languages', array(
+                        'title' => LANG_THEME_SITE_LANGUAGES,
+                        'default' => 'ru',
+                        'hint' => LANG_THEME_SITE_LANGUAGES_HINT,
+                    )),
+
+                )
+            ),
 
 
         );
