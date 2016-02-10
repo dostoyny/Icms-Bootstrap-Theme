@@ -9,5 +9,6 @@ cron.php
 index.php
 license.en.txt
 license.ru.txt
-system/
 readme.txt
+system/
+!system/languages/ru/templates/bootstrap.php
