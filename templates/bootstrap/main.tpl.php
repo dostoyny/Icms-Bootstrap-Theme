@@ -6,7 +6,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <?php $this->addMainCSS("templates/{$this->name}/css/theme-text.css"); ?>
     <?php $this->addMainCSS("templates/{$this->name}/css/theme-layout.css"); ?>
     <?php $this->addMainCSS("templates/{$this->name}/css/theme-gui.css"); ?>
     <?php $this->addMainCSS("templates/{$this->name}/css/theme-widgets.css"); ?>
@@ -21,78 +20,70 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
-    <?php $this->head(); ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <?php $this->head(); ?>
+
     <style><?php include('options.css.php'); ?></style>
 </head>
 <body>
 
     <div id="layout">
-
         <?php if (!$config->is_site_on){ ?>
-            <div id="site_off_notice"><?php printf(ERR_SITE_OFFLINE_FULL, href_to('admin', 'settings', 'siteon')); ?></div>
+            <div id="site_off_notice" class="alert alert-danger"><?php printf(ERR_SITE_OFFLINE_FULL, href_to('admin', 'settings', 'siteon')); ?></div>
         <?php } ?>
-
-        <header>
-            <div id="logo"><a href="<?php echo href_to_home(); ?>"></a></div>
-            <?php $this->widgets('header', false, 'wrapper_plain'); ?>
+        <header style="margin-bottom: 14px; margin-top: 15px;">
+            <div class="container">
+                <nav class="navbar navbar-light bg-faded">
+                    <?php $this->widgets('top', false, 'wrapper_plain'); ?>
+                </nav>
+            </div>
         </header>
-
-        <?php if($this->hasWidgetsOn('top')) { ?>
-            <nav>
-                <?php $this->widgets('top', false, 'wrapper_plain'); ?>
-            </nav>
-        <?php } ?>
-
         <div id="body">
-
-            <?php
-                $is_sidebar = $this->hasWidgetsOn('right-top', 'right-center', 'right-bottom');
-                $section_width = $is_sidebar ? '730px' : '100%';
-            ?>
-
-            <?php
-                $messages = cmsUser::getSessionMessages();
-                if ($messages){
-                    ?>
-                    <div class="sess_messages">
-                        <?php
-                            foreach($messages as $message){
-                                echo $message;
-                            }
-                        ?>
-                    </div>
+            <div class="container">
+                                            <?php if ($config->show_breadcrumbs && $this->isBreadcrumbs()){ ?>
+                                    <div id="breadcrumbs">
+                                        <?php $this->breadcrumbs(array('strip_last'=>false)); ?>
+                                    </div>
+                                <?php } ?>
+                <div class="row">
                     <?php
-                }
-            ?>
-
-            <section style="width:<?php echo $section_width; ?>">
-
-                <?php $this->widgets('left-top'); ?>
-
-                <?php if ($this->isBody()){ ?>
-                    <article>
-                        <?php if ($config->show_breadcrumbs && $this->isBreadcrumbs()){ ?>
-                            <div id="breadcrumbs">
-                                <?php $this->breadcrumbs(array('strip_last'=>false)); ?>
+                        $messages = cmsUser::getSessionMessages();
+                        if ($messages){
+                            ?>
+                            <div class="sess_messages">
+                                <?php
+                                    foreach($messages as $message){
+                                        echo $message;
+                                    }
+                                ?>
                             </div>
+                            <?php
+                        }
+                    ?>
+
+                    <section class="col-xs-8">
+
+                        <?php $this->widgets('left-top'); ?>
+
+                        <?php if ($this->isBody()){ ?>
+                            <article>
+                                <?php $this->body(); ?>
+                            </article>
                         <?php } ?>
-                        <?php $this->body(); ?>
-                    </article>
-                <?php } ?>
 
-                <?php $this->widgets('left-bottom'); ?>
+                        <?php $this->widgets('left-bottom'); ?>
 
-            </section>
+                    </section>
 
-            <aside>
-                <?php $this->widgets('right-top'); ?>
+                    <aside class="col-xs-4">
+                        <?php $this->widgets('right-top'); ?>
 
-                <?php $this->widgets('right-center'); ?>
+                        <?php $this->widgets('right-center'); ?>
 
-                <?php $this->widgets('right-bottom'); ?>
-            </aside>
-
+                        <?php $this->widgets('right-bottom'); ?>
+                    </aside>
+                </div>
+            </div>
         </div>
 
         <?php if ($config->debug && cmsUser::isAdmin()){ ?>

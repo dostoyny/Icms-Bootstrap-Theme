@@ -70,38 +70,38 @@
 
 /* Menu icons =============================================================== */
 
-.icon-accept, .menu .lock .item { background-image: url("../images/icons/lock.png"); }
-.icon-accept, .menu .accept .item { background-image: url("../images/icons/accept.png"); }
-.icon-add, .menu .add .item { background-image: url("../images/icons/add.png"); }
-.icon-edit, .menu .edit .item { background-image: url("../images/icons/edit.png"); }
-.icon-delete, .menu .delete .item { background-image: url("../images/icons/delete.png"); }
-.icon-save, .menu .save .item { background-image: url("../images/icons/save.png"); }
-.icon-cancel, .menu .cancel .item { background-image: url("../images/icons/cancel.png"); }
-.icon-key, .menu .key .item { background-image: url("../images/icons/key.png"); }
-.icon-page_gear, .menu .page_gear .item { background-image: url("../images/icons/page_gear.png"); }
-.icon-folder_add, .menu .folder_add .item { background-image: url("../images/icons/folder_add.png"); }
-.icon-folder_edit, .menu .folder_edit .item { background-image: url("../images/icons/folder_edit.png"); }
-.icon-folder_delete, .menu .folder_delete .item { background-image: url("../images/icons/folder_delete.png"); }
-.icon-user_add, .menu .user_add .item { background-image: url("../images/icons/user_add.png"); }
-.icon-user_delete, .menu .user_delete .item { background-image: url("../images/icons/user_delete.png"); }
-.icon-group, .menu .group .item { background-image: url("../images/icons/group.png"); }
-.icon-group_add, .menu .group_add .item { background-image: url("../images/icons/group_add.png"); }
-.icon-group_delete, .menu group_delete .item { background-image: url("../images/icons/group_delete.png"); }
-.icon-profile, .menu .profile .item { background-image: url("../images/icons/profile.png"); }
-.icon-messages, .menu .messages .item { background-image: url("../images/icons/messages.png"); }
-.icon-info, .menu .info .item { background-image: url("../images/icons/info.png"); }
-.icon-blog, .menu .blog .item { background-image: url("../images/icons/blog.png"); }
-.icon-settings, .menu .settings .item { background-image: url("../images/icons/settings.png"); }
-.icon-cpanel, .menu .cpanel .item { background-image: url("../images/icons/cpanel.png"); }
-.icon-more, .menu .more > .item { background-image: url("../images/icons/folders.png"); }
-.icon-logout, .menu .logout .item { background-image: url("../images/icons/logout.png"); }
-.icon-checklist, .menu .checklist .item { background-image: url("../images/icons/checklist.png"); }
-.icon-images, .menu .images .item { background-image: url("../images/icons/images.png"); }
-.icon-invites, .menu .invites .item { background-image: url("../images/icons/signature.png"); }
-.icon-balance, .menu .balance .item { background-image: url("../images/icons/coin.png"); }
-.icon-transfer, .menu .transfer .item { background-image: url("../images/icons/transfer.png"); }
-.icon-coins_add, .menu .coins_add .item { background-image: url("../images/icons/coins_add.png"); }
-.icon-coins_delete, .menu .coins_delete .item { background-image: url("../images/icons/coins_delete.png"); }
+.icon-accept{ background-image: url("../images/icons/lock.png"); }
+.icon-accept{ background-image: url("../images/icons/accept.png"); }
+.icon-add{ background-image: url("../images/icons/add.png"); }
+.icon-edit{ background-image: url("../images/icons/edit.png"); }
+.icon-delete{ background-image: url("../images/icons/delete.png"); }
+.icon-save{ background-image: url("../images/icons/save.png"); }
+.icon-cancel{ background-image: url("../images/icons/cancel.png"); }
+.icon-key{ background-image: url("../images/icons/key.png"); }
+.icon-page_gear{ background-image: url("../images/icons/page_gear.png"); }
+.icon-folder_add{ background-image: url("../images/icons/folder_add.png"); }
+.icon-folder_edit{ background-image: url("../images/icons/folder_edit.png"); }
+.icon-folder_delete{ background-image: url("../images/icons/folder_delete.png"); }
+.icon-user_add{ background-image: url("../images/icons/user_add.png"); }
+.icon-user_delete{ background-image: url("../images/icons/user_delete.png"); }
+.icon-group{ background-image: url("../images/icons/group.png"); }
+.icon-group_add{ background-image: url("../images/icons/group_add.png"); }
+.icon-group_delete{ background-image: url("../images/icons/group_delete.png"); }
+.icon-profile{ background-image: url("../images/icons/profile.png"); }
+.icon-messages{ background-image: url("../images/icons/messages.png"); }
+.icon-info{ background-image: url("../images/icons/info.png"); }
+.icon-blog{ background-image: url("../images/icons/blog.png"); }
+.icon-settings{ background-image: url("../images/icons/settings.png"); }
+.icon-cpanel{ background-image: url("../images/icons/cpanel.png"); }
+.icon-more{ background-image: url("../images/icons/folders.png"); }
+.icon-logout{ background-image: url("../images/icons/logout.png"); }
+.icon-checklist{ background-image: url("../images/icons/checklist.png"); }
+.icon-images{ background-image: url("../images/icons/images.png"); }
+.icon-invites{ background-image: url("../images/icons/signature.png"); }
+.icon-balance{ background-image: url("../images/icons/coin.png"); }
+.icon-transfer{ background-image: url("../images/icons/transfer.png"); }
+.icon-coins_add{ background-image: url("../images/icons/coins_add.png"); }
+.icon-coins_delete{ background-image: url("../images/icons/coins_delete.png"); }
 
 /* Misc icons =============================================================== */
 
