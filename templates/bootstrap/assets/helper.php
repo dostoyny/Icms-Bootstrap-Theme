@@ -137,7 +137,7 @@ function html_pagebar($page, $perpage, $total, $base_uri=false, $query=array()){
 function html_input($type='text', $name='', $value='', $attributes=array()){
     if ($type=='password'){ $attributes['autocomplete'] = 'off'; }
     $attr_str = html_attr_str($attributes);
-    $class = 'input form-controls';
+    $class = 'input form-control';
     if (isset($attributes['class'])) { $class .= ' '.$attributes['class']; }
 	return '<input type="'.$type.'" class="'.$class.'" name="'.$name.'" value="'.htmlspecialchars($value).'" '.$attr_str.'/>';
 }

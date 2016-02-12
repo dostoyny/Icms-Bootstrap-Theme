@@ -1,3 +1,12 @@
+.is_private::after {
+  color: red;
+  content: "проверить";
+}
+
+
+
+
+
 /* Session messages ========================================================= */
 
 .sess_messages {
@@ -45,12 +54,9 @@
 }
 
 .is_private, .is_closed {
-    display: inline-block;
     cursor: help;
-    width:16px;
-    height:16px;
-    background:url("../images/icons/eye.png") no-repeat;
 }
+
 .content_list_item .is_private, .widget_content_list .is_private, .content_list .is_private,
 .content_list_item .is_closed, .widget_content_list .is_closed {
     height:14px;
@@ -304,25 +310,19 @@
 .tabs-menu > select { display:none; }
 
 /* Panels =================================================================== */
-
 .gui-panel {
-    background: #F4F8FD;
-    border: solid 1px #B8D6FB;
-    margin: 20px 0;
-    overflow: hidden;
-    padding:15px;
-    color: #B3C2C9;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 15px;
 }
-
 .gui-panel h3 {
     margin-top:0;
     margin-bottom: 5px;
 }
-
 .filter-panel {
     padding:0;
 }
-
 .filter-panel .filter-link a {
     display:block;
     padding:5px 10px;
@@ -330,11 +330,9 @@
     text-decoration: none;
     color: #68809B;
 }
-
 .filter-panel .filter-link a:hover {
     background-color:#f4fafc;
 }
-
 .filter-panel .filter-link a span {
     padding-left:20px;
     background:url("../images/icons/search.png") no-repeat left center;
@@ -547,11 +545,7 @@ form .field label {
 form .field_error .error_text{ font-size:12px; color:#c0392b; float:right; margin-top: 8px; }
 form #f_slug.field_error .error_text { float:none; }
 
-.input{
-    height:16px;
-}
 
-.input,
 .date-input,
 .city-input,
 .textarea,
@@ -564,11 +558,8 @@ select {
     outline:none;
 }
 
-.input,
-.textarea { width:99%; }
-select { width:100%; }
 
-.textarea { height:200px; resize: vertical; }
+.textarea { resize: vertical; }
 
 .date-input { width: 90px; }
 

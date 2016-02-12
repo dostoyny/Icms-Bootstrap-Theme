@@ -1,13 +1,10 @@
 /* ========================================================================== */
-
 h1 + .content_datasets {
     margin-top:-15px;
 }
-
 .content_datasets ul {
     margin-left:-1px;
 }
-
 .content_datasets ul li {
     font-size:14px;
     height:20px;
@@ -16,7 +13,6 @@ h1 + .content_datasets {
     border-radius: 0;
     background:none;
 }
-
 .content_datasets ul li a { color:#95a5a6; }
 .content_datasets ul li a:hover { text-decoration:underline; color:#D35400; }
 
@@ -25,7 +21,6 @@ h1 + .content_datasets {
     color:#34495e;
     padding:0;
 }
-
 /* ========================================================================== */
 
 .content_categories + .filter-panel {
@@ -52,10 +47,6 @@ article div.content_categories:last-child {
     background: url("../images/icons/folder.png") no-repeat left center;
     margin-right: 10px;
 }
-
-.content_categories li a { color:#68809B; }
-.content_categories li a:hover { color:#d35400; }
-
 .content_categories.categories_small li {
     font-size:14px;
     height: 24px;

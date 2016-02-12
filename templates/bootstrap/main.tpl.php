@@ -21,6 +21,8 @@
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <?php $this->addMainCSS("templates/{$this->name}/addons/font-awesome-4.5.0/css/font-awesome.min.css"); ?>
+
     <?php $this->head(); ?>
 
     <style><?php include('options.css.php'); ?></style>
