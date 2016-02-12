@@ -2,18 +2,73 @@
 body {
     background-color: #f0f0f0;
 }
-
-/* Header =================================================================== */
-
-#layout header #logo a{
-    display: block;
-    float: left;
-    width: 180px;
-    height: 50px;
-    background: url("../images/logo.png") no-repeat left center;
+a:focus {
+  outline: thin none;
 }
 
-/* Header Navigation ======================================================== */
+.margin-null    {margin: 0px !important;}
+.margin-auto    {margin: 0 auto;}
+
+.margin-b0      {margin-bottom:0px   !important;}
+.margin-b5      {margin-bottom:5px   !important;}
+.margin-b10     {margin-bottom:10px  !important;}
+.margin-b15     {margin-bottom:15px  !important;}
+.margin-b20     {margin-bottom:20px  !important;}
+
+.margin-t0      {margin-top:0     !important;}
+.margin-t5      {margin-top:5px   !important;}
+.margin-t-5     {margin-top:-5px  !important;}
+.margin-t10     {margin-top:10px  !important;}
+.margin-t15     {margin-top:15px  !important;}
+.margin-t20     {margin-top:20px  !important;}
+.margin-t-20    {margin-top:-20px !important;}
+.margin-t25     {margin-top:25px  !important;}
+
+.margin-l5      {margin-left:5px;}
+.margin-l10     {margin-left:10px;}
+.margin-l-10    {margin-left:-10px;}
+.margin-l15     {margin-left:15px;}
+
+.margin-r5      {margin-right:5px;}
+.margin-r10     {margin-right:10px;}
+.margin-r-10    {margin-right:-10px;}
+.margin-r15     {margin-right:15px;}
+.margin-r-15    {margin-right:-15px;}
+.margin-r30     {margin-right:30px;}
+.margin-r-30    {margin-right: -30px !important;}
+
+.padding-t5     {padding-top:5px !important;}
+.padding-t10    {padding-top:10px !important;}
+
+.padding-l0     {padding-left: 0px;}
+.padding-l5     {padding-left: 5px;}
+
+.padding-r0     {padding-right: 0px;}
+.padding-r5     {padding-right: 5px;}
+
+.padding-0      {padding:0 !important;}
+.padding-all5   {padding:5px !important;}
+.padding-all10  {padding:10px !important;}
+.padding-all15  {padding:15px !important;}
+
+.padding-b0     {padding-bottom:0 !important;}
+.padding-b5     {padding-bottom:5px !important;}
+.padding-b10    {padding-bottom:10px !important;}
+
+.nowrap         {white-space: nowrap;}
+.font-bold      {font-weight:bold;}
+
+.text-upper     {text-transform:uppercase;}
+
+.display-i-b    {display:inline-block !important;}
+.display-b      {display:block !important;}
+.display-no     {display:none;}
+.display-t      {display:table;max-width: 100%;width: 100%;}
+.display-t-c    {display:table-cell; vertical-align: top;}
+
+.list-null {list-style:none;margin: 0;padding: 0;}
+
+/* Header =================================================================== */
 .navbar .dropdown > .dropdown-menu {
     margin: 0;
 }
@@ -193,38 +248,22 @@ aside .menu .item{
 }
 
 /* Footer =================================================================== */
-
-#layout footer{
-    background: #34495E;
-    height: 60px;
-    color: #7f8c8d;
-    padding: 0 15px;
-    clear:both;
-    font-size:12px;
+/* Footer =========================================================== */
+html {
+    min-height: 100%;
+    position: relative;
 }
-
-#layout footer ul, #layout footer li {
-    margin: 0; padding: 0; list-style: none;
+body {
+  margin-bottom: 75px;
 }
-
-#layout footer ul {
-    overflow: hidden;
+.footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  padding: 0.8rem 1rem;
 }
-
-#layout footer ul li {
-    height: 60px;
-    line-height: 60px;
-    float:left;
-    margin-right: 15px;
-}
-
-#layout footer ul li:last-child { margin:0; }
-
-
-#layout footer a { color:#95a5a6; }
-#layout footer a:hover { color:#ecf0f1; }
-
-#layout footer span.item { padding:0 10px; border-left: solid 1px #7f8c8d; }
 
 /* Footer SQL Debug ======================================================== */
 

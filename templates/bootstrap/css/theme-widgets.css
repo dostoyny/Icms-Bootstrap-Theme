@@ -1,99 +1,66 @@
 /* Widgets layout =========================================================== */
-
 .widget {
     background:#FFF;
     margin-bottom:10px;
 }
-
 .widget:last-child {
     margin-bottom: 0;
 }
-
-.widget > .title{
-    padding:0 15px;
-    height:47px;
-    line-height:47px;
-    background: #34495E;
-    font-weight: bold;
-    font-size:18px;
-    color:#FFF;
+.widget > .title {
+  border-bottom: 1px solid #e9e8e8;
+  padding: 0.5em 1em;
 }
-
 .widget > .title .links {
     float:right;
-    font-size:13px;
 }
-
-.widget > .title .links a{
-    padding: 2px 8px;
-    background: #27ae60;
-    color:#fff;
-    font-size: 12px;
-    font-weight: normal;
-    text-decoration: none;
-    margin-top:-2px;
+.widget > .title .links > a {
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: normal;
+  padding: 5px 8px;
+  text-decoration: none;
 }
-
-.widget > .title .links  a:hover{
+.widget > .title .links > a:hover{
     background:#2ecc71;
 }
-
 .widget > .body{
     padding:15px;
-    line-height: 20px;
 }
-
 .widget_text_block{
     overflow: hidden;
 }
-
-aside .widget {
-    background: #FFF;
-}
-
-aside .widget > .title {
-    font-size:12px;
-    color:#FFF;
-    background: #34495E;
-    height:38px;
-    line-height:38px;
-    padding-right:5px;
-}
-
-
 /* Tabbed Widgets layout ==================================================== */
 
 .widget_tabbed {
     margin-bottom:10px;
     background:#FFF;
 }
-
-.widget_tabbed .tabs ul,
-.widget_tabbed .tabs ul li{
-    margin: 0; padding: 0; list-style: none;
+.wd-tab {
+  border-bottom: 1px solid #e9e8e8;
+}
+.wd-tab .nav-item {
+  float: left;
+}
+.wd-tab .nav-link {
+    padding: 0.5em 1em;
+}
+.wd-tab .dropdown .nav-link {
+    padding: 0.5em 0 0.5em 1em;
+}
+.wd-tab .dropdown .wd-tab-link {
+    padding: 0.5em 1em  0.5em 0;
 }
 
 .widget_tabbed .tabs ul {
-    overflow:hidden;
-    height:47px;
-    line-height:47px;
-    background: #34495E;
+  border-bottom: 1px solid #e9e8e8;
 }
-
 .widget_tabbed .tabs ul li {
     float:left;
-    height:45px;
-    line-height:45px;
 }
-
 .widget_tabbed .tabs ul li a {
-    display:block;
-    height:47px;
-    line-height:47px;
-    font-size:14px;
-    padding:0 15px;
-    cursor: pointer;
-    color:#FFF;
+  cursor: pointer;
+  display: block;
+  padding: 0.5em 1em;
 }
 
 .widget_tabbed .tabs ul li a.active {
@@ -105,11 +72,10 @@ aside .widget > .title {
     padding:15px;
     line-height: 20px;
 }
-
 .widget_tabbed > .tabs .links {
-    float:right;
-    font-size:13px;
-    padding-right:15px;
+  float: right;
+  font-size: 13px;
+  padding: 0.8em 1em;
 }
 
 .widget_tabbed > .tabs .links a{

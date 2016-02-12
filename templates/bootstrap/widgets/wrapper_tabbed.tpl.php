@@ -1,13 +1,11 @@
 <div class="widget_tabbed">
-
-    <div class="tabs">
-        <ul>
+    <div class="tabs clearfix">
+        <ul class="list-null clearfix wd-tabbed-ul">
             <?php foreach($widgets as $index=>$widget) { ?>
                 <li class="tab">
                     <a <?php if ($index==0) { ?>class="active"<?php } ?> data-id="<?php echo $widget['id']; ?>"><?php echo $widget['title'] ? $widget['title'] : ($index+1); ?></a>
                 </li>
             <?php } ?>
-
             <li class="links">
                 <?php foreach($widgets as $index=>$widget) { ?>
                     <div class="links-wrap" id="widget-links-<?php echo $widget['id']; ?>" <?php if ($index>0) { ?>style="display: none"<?php } ?>>
@@ -20,20 +18,13 @@
                     </div>
                 <?php } ?>
             </li>
-
         </ul>
     </div>
-
     <div class="widgets">
-
         <?php foreach($widgets as $index=>$widget) { ?>
-
             <div id="widget-<?php echo $widget['id']; ?>" class="body<?php if ($widget['class']) { ?> <?php echo $widget['class'];  } ?>" <?php if ($index>0) { ?>style="display: none"<?php } ?>>
                 <?php echo $widget['body']; ?>
             </div>
-
         <?php } ?>
-
     </div>
-
 </div>

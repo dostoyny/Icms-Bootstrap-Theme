@@ -40,11 +40,11 @@
         </header>
         <div id="body">
             <div class="container">
-                                            <?php if ($config->show_breadcrumbs && $this->isBreadcrumbs()){ ?>
-                                    <div id="breadcrumbs">
-                                        <?php $this->breadcrumbs(array('strip_last'=>false)); ?>
-                                    </div>
-                                <?php } ?>
+                <?php if ($config->show_breadcrumbs && $this->isBreadcrumbs()){ ?>
+                    <div id="breadcrumbs">
+                        <?php $this->breadcrumbs(array('strip_last'=>false)); ?>
+                    </div>
+                <?php } ?>
                 <div class="row">
                     <?php
                         $messages = cmsUser::getSessionMessages();
@@ -99,22 +99,22 @@
                 </div>
             </div>
         <?php } ?>
-
-        <footer>
-            <ul>
-                <li id="copyright">
-                    <a href="<?php echo $this->options['owner_url'] ? $this->options['owner_url'] : href_to_home(); ?>">
-                        <?php html($this->options['owner_name'] ? $this->options['owner_name'] : cmsConfig::get('sitename')); ?></a>
-                    &copy;
-                    <?php echo $this->options['owner_year'] ? $this->options['owner_year'] : date('Y'); ?>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li class="nav-item" id="copyright">
+                    <a class="nav-link" href="<?php echo $this->options['owner_url'] ? $this->options['owner_url'] : href_to_home(); ?>">
+                        <?php html($this->options['owner_name'] ? $this->options['owner_name'] : cmsConfig::get('sitename')); ?>
+                        &copy;
+                        <?php echo $this->options['owner_year'] ? $this->options['owner_year'] : date('Y'); ?>
+                    </a>
                 </li>
-                <li id="info">
-                    <span class="item">
+                <li class="nav-item" id="info">
+                    <span class="nav-link">
                         <?php echo LANG_POWERED_BY_INSTANTCMS; ?>
                     </span>
-                    <span class="item">
-                        <?php echo LANG_ICONS_BY_FATCOW; ?>
-                    </span>
+
                     <?php if ($config->debug && cmsUser::isAdmin()){ ?>
                         <span class="item">
                             SQL: <a href="#sql_debug" class="ajax-modal"><?php echo $core->db->query_count; ?></a>
@@ -132,13 +132,13 @@
                         </span>
                     <?php } ?>
                 </li>
-                <li id="nav">
-                    <?php $this->widgets('footer', false, 'wrapper_plain'); ?>
-                </li>
             </ul>
-        </footer>
+            <div class="pull-sm-right">
+                <?php $this->widgets('footer', false, 'wrapper_plain'); ?>
+            </div>
+        </div>
+    </footer>
 
-    </div>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
