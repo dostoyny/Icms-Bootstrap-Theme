@@ -533,16 +533,7 @@ aside .widget_tabbed > .tabs .links a {
 }
 
 /* ========================================================================== */
-
-.widget_search { background-color:#34495E; margin:-15px; padding:10px; }
-
-.widget_search .input {
-    width:192px;
-    border:none; box-shadow: none;
-    padding-left:24px;
-    background:url("../images/icons/search-glyph.png") no-repeat 4px center #FFF;
-    font-size:12px;
-}
+.widget_search { margin:-15px; padding:10px; }
 
 /* ========================================================================== */
 
