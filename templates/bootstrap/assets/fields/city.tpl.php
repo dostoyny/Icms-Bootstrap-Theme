@@ -6,12 +6,12 @@
 
 <?php if ($field->title) { ?><label><?php echo $field->title; ?></label><?php } ?>
 
-<div id="geo-widget-<?php echo $field->element_name; ?>" class="city-input">
+<div id="geo-widget-<?php echo $field->element_name; ?>" class="city-input city-input">
 
     <?php echo html_input('hidden', $field->element_name, $city_id, array('class'=>'city-id')); ?>
 
-    <span class="city-name" <?php if (!$city_name){ ?>style="display:none"<?php } ?>><?php echo $city_name; ?></span>
+<span class="btn btn-default city-name" <?php if (!$city_name){ ?>style="display:none"<?php } ?>><?php echo $city_name; ?></span>
 
-    <a class="ajax-modal" href="<?php echo href_to('geo', 'widget', array($field->element_name, $city_id)); ?>"><?php echo LANG_SELECT; ?></a>
+    <a class="ajax-modal btn btn-primary" href="<?php echo href_to('geo', 'widget', array($field->element_name, $city_id)); ?>"><?php echo LANG_SELECT; ?></a>
 
 </div>
