@@ -17,10 +17,10 @@
     <?php echo html_file_input($field->element_name); ?>
     <?php echo html_input('hidden', $field->element_name, ''); ?>
     <?php if($field->data['allowed_extensions']){ ?>
-        <div class="hint"><?php printf(LANG_PARSER_FILE_EXTS_FIELD_HINT, implode(', ', array_map(function($val) { return trim($val); }, explode(',', mb_strtoupper($field->data['allowed_extensions']))))); ?></div>
+        <div class="hint help-block"><?php printf(LANG_PARSER_FILE_EXTS_FIELD_HINT, implode(', ', array_map(function($val) { return trim($val); }, explode(',', mb_strtoupper($field->data['allowed_extensions']))))); ?></div>
     <?php } ?>
     <?php if($field->data['max_size_mb']){ ?>
-        <div class="hint"><?php printf(LANG_PARSER_FILE_SIZE_FIELD_HINT, files_format_bytes($field->data['max_size_mb'])); ?></div>
+        <div class="hint help-block"><?php printf(LANG_PARSER_FILE_SIZE_FIELD_HINT, files_format_bytes($field->data['max_size_mb'])); ?></div>
     <?php } ?>
 </div>
 
